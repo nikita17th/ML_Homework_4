@@ -2,7 +2,7 @@
 
 
 #### 1. Какая связь между DataFrame и Dataset? (1 балл)
-DataFrame является алиасом для DataSet<Row>
+DataFrame является алиасом для `DataSet<Row>`
 #### 2. Соберите WordCount приложение, запустите на датасете ppkm_sentiment (1 балл)
 #### 3. Измените WordCount так, чтобы он удалял знаки препинания и приводил все слова к единому регистру (2 балла)
 #### 4. Измените выход WordCount так, чтобы сортировка была по количеству повторений, а список слов был во втором столбце, а не в первом (1 балл)
@@ -112,7 +112,7 @@ object WordCount {
 
 | С фильтрацией по стоп словам    | Первый запуск (2 пункт) |
 |---------------------------------|-------------------------|
-| ![img.png](with_stopwords.png)  | ![img.png](img.png)     |
+| ![img.png](with_stopwords.png)  | ![img.png](without_stopwords.png)     |
 
 Без фильтрации стоп словам функция HashAggregate распределяет данные по партициям (200) 
 [configuration spark.sql.shuffle.partitions which is by default set to 200.](https://sparkbyexamples.com/spark/spark-shuffle-partitions/)
