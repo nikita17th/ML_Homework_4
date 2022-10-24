@@ -13,7 +13,7 @@ object WordCount {
       .getOrCreate()
 
     val conf = spark.sparkContext.getConf
-    val sqlContext = spark.sqlContext;
+    val sqlContext = spark.sqlContext
 
     val inputPath = conf.get(Config.IN_PATH_PARAM, Config.IN_PATH_DEFAULT)
     val outputPath = conf.get(Config.OUT_PATH_PARAM, Config.OUT_PATH_DEFAULT)
